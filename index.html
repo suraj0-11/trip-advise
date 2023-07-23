@@ -3,6 +3,7 @@
 
 <head>
     <title>City Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: 'Helvetica', sans-serif;
@@ -16,18 +17,19 @@
 
         header {
             background-color: #1ab65b;
-            padding: 0.5px 0;
+            padding: 10px 0;
             text-align: center;
         }
 
         h1 {
             text-align: center;
-            margin-top:20px;
+            margin-top: 20px;
         }
 
         table {
             border-collapse: collapse;
-            width: 80%;
+            width: 100%;
+            max-width: 400px; /* Adjusted for mobile devices */
             margin: 0 auto;
             background-color: #222;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -37,7 +39,7 @@
         td {
             border: 1px solid #444;
             text-align: left;
-            padding: 12px;
+            padding: 8px; /* Adjusted for mobile devices */
         }
 
         th {
@@ -56,14 +58,15 @@
             background-color: #4CAF50;
             border: none;
             color: white;
-            padding: 8px 20px;
+            padding: 8px 16px; /* Adjusted for mobile devices */
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-right: 10px;
+            display: block; /* Changed to block for better mobile layout */
+            font-size: 14px; /* Adjusted for mobile devices */
+            margin: 5px auto; /* Adjusted for mobile devices */
             border-radius: 5px;
             cursor: pointer;
+            width: 100%; /* Adjusted for mobile devices */
         }
 
         .city-button:hover {
