@@ -29,7 +29,7 @@
         table {
             border-collapse: collapse;
             width: 100%;
-            max-width: 400px; /* Adjusted for mobile devices */
+            max-width: 400px;
             margin: 0 auto;
             background-color: #222;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -39,7 +39,7 @@
         td {
             border: 1px solid #444;
             text-align: left;
-            padding: 8px; /* Adjusted for mobile devices */
+            padding: 8px;
         }
 
         th {
@@ -58,15 +58,15 @@
             background-color: #4CAF50;
             border: none;
             color: white;
-            padding: 8px 16px; /* Adjusted for mobile devices */
+            padding: 8px 16px;
             text-align: center;
             text-decoration: none;
-            display: block; /* Changed to block for better mobile layout */
-            font-size: 14px; /* Adjusted for mobile devices */
-            margin: 5px auto; /* Adjusted for mobile devices */
+            display: block;
+            font-size: 14px;
+            margin: 5px auto;
             border-radius: 5px;
             cursor: pointer;
-            width: 100%; /* Adjusted for mobile devices */
+            width: 100%;
         }
 
         .city-button:hover {
@@ -80,6 +80,26 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-attachment: fixed;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px; /* Increase heading size for mobile */
+            }
+
+            table {
+                max-width: 100%; /* Full width for the table on mobile */
+            }
+
+            th,
+            td {
+                padding: 12px; /* Increase padding for table cells on mobile */
+            }
+
+            .city-button {
+                font-size: 16px; /* Increase button font size for mobile */
+            }
         }
     </style>
 </head>
