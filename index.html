@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Information</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #fff;
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1ab65b;
+            padding: 0.5px 0;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top:20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            background-color: #222;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        th,
+        td {
+            border: 1px solid #444;
+            text-align: left;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        tr {
+            transition: background-color 0.2s;
+        }
+
+        tr:hover {
+            background-color: #333;
+        }
+
+        .city-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .city-button:hover {
+            background-color: #008CBA;
+        }
+
+        /* Background Image */
+        .background-image {
+            background-image: url('city.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="background-image">
+    <header>
+        <h1>TripAdvisor</h1>
+    </header>
+    <h1>Explore Cities</h1>
+    <table>
+        <tr onclick="redirectTo('bangalore.html')">
+            <td>
+                <button class="city-button">Bangalore</button>
+            </td>
+            <td>Click to know more</td>
+        </tr>
+        <tr onclick="redirectTo('mumbai.html')">
+            <td>
+                <button class="city-button">Mumbai</button>
+            </td>
+            <td>Click to know more</td>
+        </tr>
+        <tr onclick="redirectTo('delhi.html')">
+            <td>
+                <button class="city-button">Delhi</button>
+            </td>
+            <td>Click to know more</td>
+        </tr>
+    </table>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
